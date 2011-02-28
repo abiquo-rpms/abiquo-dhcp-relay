@@ -1,6 +1,6 @@
 Name:     abiquo-dhcp-relay
 Version:  1.7
-Release:  1
+Release:  2
 Summary:  Abiquo DCHP Relay scripts
 Group:    Development/System
 License:  Multiple 
@@ -29,5 +29,8 @@ rm -rf $RPM_BUILD_ROOT
 %{_bindir}/abiquo-dhcp-relay
 
 %changelog
+* Mon Feb 28 2011 Sergio Rubio <srubio@abiquo.com> - 1.7-2
+- updated relay script
+
 * Fri Feb 25 2011 Sergio Rubio <srubio@abiquo.com> - 1.7-1
 - initial release
