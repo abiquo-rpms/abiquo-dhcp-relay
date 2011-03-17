@@ -1,6 +1,6 @@
 Name:     abiquo-dhcp-relay
-Version:  1.7
-Release:  2
+Version:  1.7.5
+Release:  1
 Summary:  Abiquo DCHP Relay scripts
 Group:    Development/System
 License:  Multiple 
@@ -20,6 +20,7 @@ rm -rf $RPM_BUILD_ROOT
 mkdir -p $RPM_BUILD_ROOT/%{_docdir}/%{name}
 mkdir -p $RPM_BUILD_ROOT/%{_bindir}/
 cp %{SOURCE0} $RPM_BUILD_ROOT/%{_bindir}/abiquo-dhcp-relay
+chmod +x $RPM_BUILD_ROOT/%{_bindir}/abiquo-dhcp-relay
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -29,6 +30,13 @@ rm -rf $RPM_BUILD_ROOT
 %{_bindir}/abiquo-dhcp-relay
 
 %changelog
+* Thu Mar 17 2011 Sergio Rubio <srubio@abiquo.com> - 1.7.5-1
+- version bump
+
+* Thu Mar 03 2011 Sergio Rubio <srubio@abiquo.com> - 1.7-3
+- make abiquo-dhcp-relay executable
+- update relay script
+
 * Mon Feb 28 2011 Sergio Rubio <srubio@abiquo.com> - 1.7-2
 - updated relay script
 
